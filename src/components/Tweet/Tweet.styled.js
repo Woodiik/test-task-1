@@ -60,9 +60,21 @@ export const FollowButton = styled.button`
 
   text-transform: uppercase;
   border: none;
-  transition: background 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+  :hover,
+  :focus {
+    background-color: #d6b0fe;
+  }
+  :active {
+    transform: scale(0.9);
+  }
   &.active {
     background: #5cd3a8;
+    :hover,
+    :focus {
+      background: #2daa7d;
+    }
   }
 `;
 

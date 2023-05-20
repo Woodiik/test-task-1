@@ -35,4 +35,14 @@ export const LoadButton = styled.button`
 
   text-transform: uppercase;
   border: none;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+
+  :hover,
+  :focus {
+    background: #2daa7d;
+  }
+  :active {
+    transform: scale(0.9);
+  }
 `;
